@@ -67,16 +67,16 @@ const ContactMe = ({ theme, setTheme }) => {
 
     emailjs
       .send(
-        'service_9g318ub', // Your service ID
-        'template_c5pkf0m', // Your template ID
+        '', // Your service ID
+        '', // Your template ID
         {
           from_name: form.name,
-          to_name: 'Rishabh Sagar',
+          to_name: '',
           from_email: form.email,
-          to_email: 'rishabh04sagar@gmail.com',
+          to_email: '',
           message: form.message,
         },
-        'FoEII6w1EqMnm1UNb' // Your public key
+        '' // Your public key
       )
       .then(
         () => {
