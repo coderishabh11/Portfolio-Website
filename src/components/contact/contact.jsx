@@ -149,11 +149,6 @@ const ContactMe = ({ theme, setTheme }) => {
           <img src={message} alt="Message" className="message-icon" />
         </button>
       </motion.form>
-      <footer className='footer'>
-        <p className="footer-text text-center">
-          Copyright &copy; 2024 Rishabh Sagar 
-        </p>
-      </footer>
     </section>
   );
 };

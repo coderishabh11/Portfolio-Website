@@ -1,5 +1,6 @@
 /* Container for social links */
 .social-links {
+  display: flex;
   position: fixed;
   top: 10vh; /* Positioning from the top of the viewport */
   right: 1vw; /* Positioning from the right of the viewport */

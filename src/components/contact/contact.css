@@ -142,6 +142,11 @@
 
   .contact-textarea {
     width: 100%;
+    margin-top: 10px;
     /* Ensure textarea takes full width on mobile */
+  }
+
+  .contact-button{
+    margin-top: 10px;
   }
 }

@@ -5,6 +5,7 @@
   position: fixed; /* Fixes the button on the screen */
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically */
+  display: flex;
 }
 
 .toggle-icon {
