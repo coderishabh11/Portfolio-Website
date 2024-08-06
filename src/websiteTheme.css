@@ -13,6 +13,7 @@
     --quaditary-color:#fe531a;
     --contact-box: #f0d0cc;
     --border-color: black;
+    --edu-exp: #504e4a;
 }
 
 .dark-theme{
@@ -22,6 +23,7 @@
     --quaditary-color:#fe531a;
     --contact-box: #b0a5c9;
     --border-color: white;
+    --edu-exp: #d0c8bf;
 }
 
 .contact-field{
@@ -42,4 +44,8 @@
 
 .border-contact{
     border: 1.5px solid var(--border-color);
+}
+
+.text-eduexp{
+    color: var(--edu-exp);
 }

@@ -7,6 +7,10 @@
   transition: transform 0.5s;
 }
 
+.text-company{
+  color:darkgray;
+}
+
 /* Styling for experience description text */
 .exp-desc{
   font-size: 13px;
