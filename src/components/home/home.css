@@ -1,0 +1,52 @@
+/* Container for the home section */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Full viewport height */
+  padding-left: 0;
+  position: relative;
+}
+
+/* Styling for the main text */
+.home-text {
+  font-weight: 700;
+}
+
+/* Arrow image styling for smooth scrolling */
+.arrow {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  opacity: 0.7; /* Initial opacity */
+  transition: opacity 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for the arrow */
+.arrow:hover {
+  opacity: 1; /* Full opacity on hover */
+  animation: compressExpand 0.6s ease-in-out infinite; /* Infinite scaling animation */
+}
+
+/* Keyframes for compress-expand animation */
+@keyframes compressExpand {
+  0%, 100% {
+    transform: translateX(-50%) scaleY(1);
+  }
+  50% {
+    transform: translateX(-50%) scaleY(0.8);
+  }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .home-container {
+    margin: 0;
+    padding: 0 20px; /* Add padding for small screens */
+  }
+}

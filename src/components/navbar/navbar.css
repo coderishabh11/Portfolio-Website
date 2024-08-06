@@ -1,0 +1,77 @@
+/* Navigation bar styles */
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg) translate3d(-50%, 0, 0); /* Rotate and position navigation vertically on the side */
+  top: 15%;
+  left: -6.5rem;
+  z-index: 1000; /* Ensure navigation is on top of other elements */
+}
+
+/* Styling for navigation links */
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #575757;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ec704c; /* Change color on hover */
+}
+
+/* Styling for the active navigation link */
+nav a.active {
+  color: #ec704c; /* Highlight the active link */
+}
+
+/* Hamburger menu button styles (visible on mobile devices) */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001; /* Ensure hamburger menu is above other elements */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for the hamburger menu lines */
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #575757;
+  margin: 5px 0;
+}
+
+/* Media query to show hamburger menu on mobile devices */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  /* Hide the navigation bar initially */
+  nav {
+    display: none;
+    position: fixed;
+    flex-direction: column; /* Arrange links vertically */
+    transform: rotate(0); /* Remove rotation for mobile */
+    top: 60px;
+    left: 0;
+    width: 100%; /* Full width for mobile */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to navigation bar */
+  }
+
+  /* Display the navigation bar when the menu is open */
+  nav.open {
+    display: flex; /* Show the menu */
+  }
+
+  /* Adjust margin for navigation links on mobile */
+  nav a {
+    margin: 20px;
+  }
+}

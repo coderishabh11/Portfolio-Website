@@ -1,0 +1,86 @@
+/* about.css */
+
+.about-heading {
+  font-weight: 500;
+  font-size: 2.5rem;
+  /* Styling for the "Know Who I'm" heading */
+}
+
+.skill-block {
+  padding: 20px; /* Add padding to increase the size of the blocks */
+  margin-bottom: 1.5rem; /* Keep this for vertical spacing */
+  margin-right: 2rem; /* Add horizontal spacing */
+  margin-left: 2rem; /* Add horizontal spacing */
+  transition: transform 0.5s; /* Smooth transition for zoom effect */
+}
+
+.skill-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px #D8A9A3; /* Shadow effect on hover */
+}
+
+.skill-logo {
+  max-width: 50px;
+  height: auto;
+  transition: transform 0.3s; /* Smooth transition for zoom effect */
+}
+
+.skill-logo:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.profile-container {
+  text-align: center;
+  /* Center the profile picture container */
+}
+
+.profile-box {
+  width: 310px;
+  height: 310px;
+  margin-left: 10vw;
+  background: linear-gradient(to bottom right, #fe531a, #D8A9A3);
+  border-radius: 5%; /* Optional: Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow for a subtle 3D effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Ensure content is centered */
+}
+
+.profile_pic {
+  width: 300px;
+  height: auto;
+  border-radius: 5%;
+  transition: transform 0.7s; /* Smooth transition for zoom effect */
+}
+
+.profile_pic:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.container.pt {
+  margin-bottom: 20px; /* Adds space after "Know About Me" section */
+}
+
+.margin-left-10vw {
+  margin-left: 1vw; /* New class to handle left margin */
+}
+
+.container {
+  align-items: center;
+  /* Center align container elements */
+}
+
+.custom-link {
+  font-style: italic;
+  font-size: 17px;
+  text-decoration: none; /* Removes the underline */
+  /* Styling for custom link */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 5vw;
+    /* Adjust padding for mobile devices */
+  }
+}

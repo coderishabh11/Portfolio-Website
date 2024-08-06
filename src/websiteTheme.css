@@ -1,0 +1,45 @@
+.secondary-text{
+    color: var(--quaditary-color);
+  }
+
+  /* #ED6A5A */
+
+/* Theme for all section */
+
+:root{
+    --primary-color:#F4FAFF;
+    --secondary-color:#212121;
+    --tertiary-color:#D8A9A3;
+    --quaditary-color:#fe531a;
+    --contact-box: #f0d0cc;
+    --border-color: black;
+}
+
+.dark-theme{
+    --primary-color:#212121;
+    --secondary-color: #F4FAFF;
+    --tertiary-color: #5D576B;
+    --quaditary-color:#fe531a;
+    --contact-box: #b0a5c9;
+    --border-color: white;
+}
+
+.contact-field{
+    background-color: var(--contact-box);
+}
+
+.heading-text{
+    color: var(--secondary-color);
+}
+
+.card-background{
+    background-color: var(--tertiary-color);
+}
+
+.background-color{
+    background-color: var(--contact-box);
+}
+
+.border-contact{
+    border: 1.5px solid var(--border-color);
+}

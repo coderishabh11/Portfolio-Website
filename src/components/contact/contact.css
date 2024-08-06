@@ -1,0 +1,147 @@
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  margin-top: 12rem;
+  padding-bottom: 28vh;
+  /* Flexbox layout for the contact section with center alignment and padding */
+}
+
+.contact-heading {
+  margin-left: 15vw;
+  margin-right: 10vw; /* Gap between heading and contact box */
+  text-align: center;
+  font-weight: 500;
+  /* Styling for the contact section heading */
+}
+
+.contact-box {
+  border-radius: 10px;
+  padding: 30px;
+  width: 50vw; /* Adjusted width to fit the layout */
+  max-width: 650px;
+  height: 50vh; /* Adjust height based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 10vw; /* 10vw gap from the right side */
+  background: none; /* Remove background */
+  box-shadow: none; /* Remove box shadow if any */
+  border: none; /* Remove border */
+  /* Styling for the contact form box */
+}
+
+.contact-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Space between Name and Email fields */
+  /* Flexbox layout for contact fields with horizontal alignment */
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  /* Styling for input and textarea fields with blur and zoom effects */
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  transform: scale(1.01); /* Zoom effect on focus */
+  /* Slight zoom effect when input or textarea is focused */
+}
+
+.contact-input {
+  height: 50px;
+  flex: 1; /* Allow inputs to grow equally */
+  /* Styling for contact input fields */
+}
+
+.contact-textarea {
+  height: 50%;
+  resize: none;
+  /* Styling for textarea with fixed height and no resize option */
+}
+
+.contact-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 190px;
+  background: none; /* Remove background */
+  transition: transform 0.5s;
+  /* Styling for contact button with hover effect */
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect on button hover */
+}
+
+.message-icon {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  /* Styling for the message icon next to the contact button */
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 95vw;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #D8A9A3; 
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5vw; /* 5vw gap on left and right */
+    /* Stack layout vertically on mobile devices */
+  }
+
+  .contact-heading {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 50px; /* Optional: Adjust font size for mobile */
+    text-align: center;
+    /* Adjustments for contact heading on mobile devices */
+  }
+
+  .contact-box {
+    width: 80vw; /* 80vw for mobile */
+    right: auto; /* Remove right positioning */
+    position: relative; /* Remove absolute positioning */
+    /* Adjustments for contact box on mobile devices */
+  }
+
+  .contact-fields {
+    flex-direction: column; /* Stack fields vertically on mobile */
+    gap: 10px; /* Space between stacked fields */
+    /* Adjust contact fields layout for mobile devices */
+  }
+
+  .contact-input {
+    width: 100%;
+    /* Ensure input fields take full width on mobile */
+  }
+
+  .contact-textarea {
+    width: 100%;
+    /* Ensure textarea takes full width on mobile */
+  }
+}

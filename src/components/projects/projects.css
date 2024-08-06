@@ -1,0 +1,117 @@
+/* Section padding */
+.projects-section {
+  padding: 2rem 0;
+  padding-bottom: 2rem;
+}
+
+/* Center text alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Grid layout for project cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row on larger screens */
+  gap: 2rem; /* Space between project cards */
+  justify-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+/* Styling for the project section heading */
+.project-heading {
+  font-weight: 500;
+}
+
+/* Project card styling */
+.project-card {
+  width: 25vw; /* Set card width to 25vw */
+  height: auto;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 15px; /* Padding inside the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for scaling and shadow on hover */
+  opacity: 1; /* Ensure opacity is set to 1 */
+  transform: translateX(0); /* Ensure no initial translation */
+  backface-visibility: hidden; /* Prevent flickering during transition */
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px #D8A9A3; /* Add shadow on hover */
+}
+
+/* Positioning for the upper part of the card */
+.upper_part {
+  position: relative;
+}
+
+/* Image styling inside the card */
+.project-pic {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* GitHub link styling */
+.github-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s; /* Smooth transition for the link */
+}
+
+/* GitHub icon styling */
+.github-icon {
+  width: 30px; /* Set GitHub icon size */
+  height: auto;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.8s; /* Apply smooth transition to the icon */
+}
+
+/* Rotate GitHub icon on hover */
+.github-link:hover .github-icon {
+  transform: rotate(360deg); /* Rotate the icon on hover */
+}
+
+/* Lower part of the card styling */
+.lower_part {
+  padding-top: 1rem;
+}
+
+/* Project title styling */
+.lower_part h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Project description styling */
+.lower_part p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1 column per row on smaller screens */
+    padding-left: 5vw; /* Reduce padding on smaller screens */
+    padding-right: 5vw;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 80vw; /* Full width on smaller screens */
+    margin: 0 auto; /* Center the card horizontally */
+  }
+}

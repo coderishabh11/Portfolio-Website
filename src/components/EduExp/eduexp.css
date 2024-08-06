@@ -1,0 +1,124 @@
+.eduExp-container{
+  margin-top: 20px; /* Margin at the top for spacing */
+}
+
+/* Styling for the card hover effect */
+.card{
+  transition: transform 0.5s;
+}
+
+/* Styling for experience description text */
+.exp-desc{
+  font-size: 13px;
+
+}
+
+/* Scaling effect for cards on hover */
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px #D8A9A3;
+}
+
+.gradient-custom-5 {
+  padding: 50px 0;
+}
+  
+/* Container for the columns */
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8vw; /* Gap between columns for desktop */
+  padding-left: 8vw; /* Left side gap for desktop */
+  padding-right: 8vw; /* Right side gap for desktop */
+}
+
+/* Individual column within the timeline */
+.timeline-column {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Header styling for the timeline sections */
+.timeline-header {
+  margin-bottom: 20px;
+}
+
+/* Main timeline styling */
+.main-timeline-5 {
+  position: relative;
+  width: 100%;
+}
+
+/* Line that runs down the middle of the timeline */
+.main-timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #D8A9A3;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin-left: -3px;
+}
+
+/* Container for individual timeline items */
+.timeline-5 {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 1px;
+  background-color: #D8A9A3;
+  top: 18px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right-5 {
+  padding: 0 0 20px 40px;
+  left: auto;
+}
+
+.right-5::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #D8A9A3;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #D8A9A3 transparent transparent;
+}
+
+.right-5::after {
+  left: -10px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+  .timeline-container {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 7vw; /* Left side gap for phones */
+    padding-right: 7vw; /* Right side gap for phones */
+  }
+
+  .timeline-column {
+    max-width: 100%;
+  }
+}
+
+/* Media Query for Tablets and Small Desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .timeline-container {
+    padding-left: 5vw; /* Left side gap for tablets and small desktops */
+    padding-right: 5vw; /* Right side gap for tablets and small desktops */
+  }
+}
+  

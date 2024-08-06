@@ -1,0 +1,50 @@
+/* Container for social links */
+.social-links {
+  position: fixed;
+  top: 10vh; /* Positioning from the top of the viewport */
+  right: 1vw; /* Positioning from the right of the viewport */
+  z-index: 10; /* Ensure the social links are on top of other elements */
+}
+
+/* Individual social link item */
+.social-item {
+  position: relative;
+  padding: auto;
+  width: 50px; /* Set size of the social link container */
+  height: 50px;
+  margin-bottom: 10px; /* Space between social icons */
+  overflow: hidden;
+  border-radius: 50%; /* Make the container circular */
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+}
+
+/* Styling for the social media icons */
+.icon-size {
+  width: 45px; /* Size of the icons */
+  height: auto;
+  padding: 5%; /* Padding inside the container */
+  transition: transform 0.8s; /* Smooth rotation effect on hover */
+}
+
+/* Rotate icon 360 degrees on hover */
+.icon-size:hover {
+  transform: rotate(360deg);
+}
+
+/* Media query for phone-sized screens */
+@media (max-width: 768px) {
+  .social-links {
+    right: 2.5vw; /* Adjust positioning on smaller screens */
+  }
+
+  .social-item {
+    width: 40px; /* Decrease size for phone screens */
+    height: 40px;
+  }
+
+  .icon-size {
+    width: 30px; /* Adjust the icon size accordingly */
+  }
+}
