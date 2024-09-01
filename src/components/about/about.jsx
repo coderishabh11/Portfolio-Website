@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
-import { html, css, js, nodejs, react, tensorflow, pytorch, scikit_learn, pandas, numpy, mongodb, sql, python, c, java } from '../../assets/index.js';
+import { html, css, js, nodejs, react, tensorflow, pytorch, scikit_learn, pandas, numpy, mongodb, sql, python, c, java, keras } from '../../assets/index.js';
 import { profile } from '../../assets/index.js';
 import "./about.css";
 
@@ -12,7 +12,7 @@ const Skill = () => {
     },
     {
       title: "AI & ML",
-      icons: [pandas, numpy, tensorflow, pytorch, scikit_learn]
+      icons: [pandas, numpy, tensorflow, pytorch, scikit_learn, keras]
     },
     {
       title: "Database",
@@ -46,11 +46,15 @@ const Skill = () => {
             >
               <span className="secondary-text h4 d-block text-center mb-3">{skill.title}</span>
               <div className="d-flex justify-content-around flex-wrap">
-                {skill.icons.map((icon, i) => (
-                  <div className="text-center" key={i}>
-                    <img src={icon} alt={skill.title.toLowerCase()} className="skill-logo"/>
-                  </div>
-                ))}
+                {skill.icons.map((icon, i) => {
+                  
+                  const iconName = icon.split('/').pop().split('.')[0];
+                  
+                  return(
+                    <div className="text-center" key={i}>
+                      <img src={icon} title={iconName.charAt(0).toUpperCase() + iconName.slice(1)} alt={skill.title.toLowerCase()} className="skill-logo"/>
+                    </div>
+                )})}
               </div>
             </motion.div>
           </div>
@@ -131,7 +135,7 @@ const About = () => {
                   I&#39;m a
                   <span className="heading-text"> AI Enthusiast</span> with a
                   passion for
-                  <span className="heading-text"> Cloud Computing</span>.
+                  <span className="heading-text"> cutting-edge technology</span>.
                 </h2>
               </motion.div>
               <motion.div

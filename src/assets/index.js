@@ -13,6 +13,8 @@ import react from './logos/skill-logo/react.png';
 import scikit_learn from './logos/skill-logo/scikit-learn.png';
 import sql from './logos/skill-logo/sql.png';
 import tensorflow from './logos/skill-logo/tensorflow.png';
+import keras from './logos/skill-logo/keras.png';
+import git from './logos/skill-logo/git.png';
 
 import instagram from './logos/skill-logo/instagram.png';
 import twitter from './logos/skill-logo/twitter.png'
@@ -29,6 +31,8 @@ import profile from './profile/img.jpeg'
 import search from './projects/search.jpg';
 import recipe from './projects/recipe.jpg';
 import youtube from './projects/youtube.jpg';
+import face from './projects/face.jpg';
+import stock from './projects/stock.jpg';
 
 import resumefile from '../../public/resume.pdf';
 
@@ -39,14 +43,14 @@ import message from './logos/icons/message.png';
 
 export{
     html, css, js, nodejs, react,
-    tensorflow, pytorch, scikit_learn, pandas, numpy, 
+    tensorflow, pytorch, scikit_learn, pandas, numpy, keras,
     mongodb, sql,
     python, c, java, 
     instagram, twitter, github,linkedin,
     link_gif, resume,
     profile,
     black_arrow, white_arrow,
-    search, youtube, recipe, 
+    search, youtube, recipe, face, stock,
     resumefile,
     moon_dark, sun_light,
     message,

@@ -7,16 +7,12 @@
   transition: transform 0.5s;
 }
 
-.text-company{
-  color:darkgray;
-}
-
 /* Styling for experience description text */
 .exp-desc{
   font-size: 13px;
 
 }
-
+y
 /* Scaling effect for cards on hover */
 .card:hover{
   transform: scale(1.05);

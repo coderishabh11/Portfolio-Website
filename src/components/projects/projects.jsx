@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './projects.css';
-import { search, youtube, recipe } from '../../assets';
+import { search, youtube, recipe, face, stock } from '../../assets';
 import { github } from '../../assets';
 import '../../websiteTheme.css';
 
@@ -119,6 +119,50 @@ const Projects = () => {
             <div className="lower_part">
               <h3 className='text-center font-weigth-bold'><b>A Multi-Attribute Search Algorithm Suite</b></h3>
               <p>Developed an advanced search algorithm suite for a given dataset, experimenting with various algorithms and models to optimize search functionality.</p>
+            </div>
+          </motion.div>
+
+          {/* Project 4: Stock Price Prediciton */}
+          <motion.div
+            className="project-card card-background"
+            variants={{
+              hidden: { opacity: 0, x: -100 }, // Slide-in from left with fade-in
+              show: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="upper_part">
+              <img src={stock} alt="Search Algorithm suite" className="project-pic" />
+              <a href="https://github.com/coderishabh11/Stock-Price-Prediction" className="github-link card-background">
+                <img src={github} alt="GitHub icon" className="github-icon" />
+              </a>
+            </div>
+            <div className="lower_part">
+              <h3 className='text-center font-weigth-bold'><b>Apple Stock Price Analysis and Prediction</b></h3>
+              <p>Compared the performance of Random Forest, K-Neighbors, and LSTM models for predicting Apple stock prices using time series data. Analyzed historical data to build and identify the most accurate predictive approach.</p>
+            </div>
+          </motion.div>
+
+          
+
+          {/* Project 5: Facial Expression Classification */}
+          <motion.div
+            className="project-card card-background"
+            variants={{
+              hidden: { opacity: 0, x: -100 }, // Slide-in from left with fade-in
+              show: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="upper_part">
+              <img src={face} alt="Search Algorithm suite" className="project-pic" />
+              <a href="https://github.com/coderishabh11/Facial-Expression-Classification" className="github-link card-background">
+                <img src={github} alt="GitHub icon" className="github-icon" />
+              </a>
+            </div>
+            <div className="lower_part">
+              <h3 className='text-center font-weigth-bold'><b>Facial Expression Classification with Deep Learning</b></h3>
+              <p>Classified facial expressions into categories like anger, happiness, and sadness using deep learning. Tested VGG19, MobileNetV3, and ResNet50, achieving top accuracy with ResNet50 and Inception Pyramid Pooling Module (iPPM).</p>
             </div>
           </motion.div>
         </motion.div>
