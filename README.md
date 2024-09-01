@@ -2,7 +2,8 @@
 
 **[Rishabh Sagar](https://coderishabh11.github.io/Portfolio-Website/)**
 
-![Portfolio Image](https://github.com/user-attachments/assets/c405080e-99b2-448e-9c33-f0412cd6a75c)
+![Portfolio Image](https://github.com/user-attachments/assets/8da199b3-6958-4690-bc53-786a0e242997)
+
 
 
 ## Built With
