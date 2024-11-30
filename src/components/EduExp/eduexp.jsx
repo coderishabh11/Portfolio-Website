@@ -94,8 +94,12 @@ const EduExp = () => {
                   <div className="card-body p-4">
                     <h5 className='secondary-text'>Machine Learning Engineer Intern</h5>
                     <a href='https://deeplogicai.tech/' title='DeepLogic AI' alt='DeepLogic AI' style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}><span className="small text-eduexp"><i className="fas fa-clock me-1"></i>DeepLogic AI</span></a>
-                    <span className="float-right small text-eduexp"><i className="fas fa-clock me-1">&emsp;(June - August, 2023)</i></span>
-                    <p className="mt-2 mb-0 exp-desc heading-text">Developed a multi-attribute search algorithm suite to enhance search functionality for a given dataset. Experimented with various algorithms and models to optimize efficiency.</p>
+                    <span className="float-right small text-eduexp"><i className="fas fa-clock me-1">&emsp;(September - November, 2024)</i></span>
+                    <p className="mt-2 mb-0 exp-desc heading-text">Developed a CNN-based system for automated image extraction from medical videos, using probability scoring and FAISS for efficient image similarity comparisons.
+
+
+
+</p>
                   </div>
                 </div>
               </motion.div>
@@ -110,13 +114,30 @@ const EduExp = () => {
                 <div className="card card-background">
                   <div className="card-body p-4">
                     <h5 className='secondary-text'>Machine Learning Engineer Intern</h5>
+                    <a href='https://deeplogicai.tech/' title='DeepLogic AI' alt='DeepLogic AI' style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}><span className="small text-eduexp"><i className="fas fa-clock me-1"></i>Beyond Exams</span></a>
+                    <span className="float-right small text-eduexp"><i className="fas fa-clock me-1">&emsp;(July - August, 2023)</i></span>
+                    <p className="mt-2 mb-0 exp-desc heading-text">Developed a multi-attribute search algorithm suite to enhance search functionality for a given dataset. Experimented with various algorithms and models to optimize efficiency.</p>
+                  </div>
+                </div>
+              </motion.div>
+              {/* Experience iterm 3 */}
+              <motion.div
+                className="timeline-5 right-5"
+                initial={{ opacity: 0, y: 20 }} // Initial state for animation
+                whileInView={{ opacity: 1, y: 0 }} // Animation when the element is in view
+                transition={{ delay: 3, duration: 0.5 }} // Delay and duration for the animation
+                viewport={{ once: true }}
+              >
+                <div className="card card-background">
+                  <div className="card-body p-4">
+                    <h5 className='secondary-text'>Machine Learning Engineer Intern</h5>
                     <a href='https://beyondexams.org/' title='Beyond Exams' alt='Beyond Exams' style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}><span className="small text-eduexp"><i className="fas fa-clock me-1"></i>Beyond Exams</span></a>
                     <span className="float-right small text-eduexp"><i className="fas fa-clock me-1">&emsp;(June - November, 2022)</i></span>
                     <p className="mt-2 mb-0 exp-desc heading-text">Built a Streamlit app that classifies YouTube videos into educational or non-educational categories. If educational, further categorized them into specific subjects like physics, chemistry, etc., using their thumbnails and titles.</p>
                   </div>
                 </div>
               </motion.div>
-              {/* Add more experience items here if needed */}
+              {/* Add more experience here */ }
             </motion.div>
           </motion.div>
         </div>

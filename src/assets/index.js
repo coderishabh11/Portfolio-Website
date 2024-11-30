@@ -33,6 +33,7 @@ import recipe from './projects/recipe.jpg';
 import youtube from './projects/youtube.jpg';
 import face from './projects/face.jpg';
 import stock from './projects/stock.jpg';
+import media_bias from './projects/media-bias.png'
 
 import resumefile from '../../public/resume.pdf';
 
@@ -50,7 +51,7 @@ export{
     link_gif, resume,
     profile,
     black_arrow, white_arrow,
-    search, youtube, recipe, face, stock,
+    search, youtube, recipe, face, stock,media_bias,
     resumefile,
     moon_dark, sun_light,
     message,

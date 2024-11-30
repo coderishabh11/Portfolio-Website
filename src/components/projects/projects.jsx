@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './projects.css';
-import { search, youtube, recipe, face, stock } from '../../assets';
+import { search, youtube, recipe, face, stock, media_bias } from '../../assets';
 import { github } from '../../assets';
 import '../../websiteTheme.css';
 
@@ -101,7 +101,28 @@ const Projects = () => {
             </div>
           </motion.div>
 
-          {/* Project 3: Multi-Attribute Search Algorithm Suite */}
+          {/* Project 3: Media Bias Detection */}
+          <motion.div
+            className="project-card card-background"
+            variants={{
+              hidden: { opacity: 0, x: -100 }, // Slide-in from left with fade-in
+              show: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="upper_part">
+              <img src={media_bias} alt="Search Algorithm suite" className="project-pic" />
+              <a href="https://github.com/coderishabh11/Media-Bias-Analysis-in-Indian-News-Articles" className="github-link card-background">
+                <img src={github} alt="GitHub icon" className="github-icon" />
+              </a>
+            </div>
+            <div className="lower_part">
+              <h3 className='text-center font-weigth-bold'><b>Media Bias Analysis in Indian News Articles              </b></h3>
+              <p>Analyzes media bias in the Indian media landscape, considering linguistic, cultural, and regional diversity. Utilizes advanced NLP techniques to quantify key aspects of bias, including sentiment, tone, political leaning, and context.</p>
+            </div>
+          </motion.div>
+
+          {/* Project 4: Multi-Attribute Search Algorithm Suite */}
           <motion.div
             className="project-card card-background"
             variants={{
@@ -122,7 +143,7 @@ const Projects = () => {
             </div>
           </motion.div>
 
-          {/* Project 4: Stock Price Prediciton */}
+          {/* Project 5: Stock Price Prediciton */}
           <motion.div
             className="project-card card-background"
             variants={{
@@ -145,7 +166,7 @@ const Projects = () => {
 
           
 
-          {/* Project 5: Facial Expression Classification */}
+          {/* Project 6: Facial Expression Classification */}
           <motion.div
             className="project-card card-background"
             variants={{
